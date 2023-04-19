@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4"
+    android:background="@drawable/background_inicio">
+
+    <View
+        android:id="@+id/view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/container_components"/>
+
+    <ImageButton
+        android:id="@+id/bt_usuario"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/icon_usuario"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="usuario"
+        app:layout_constraintEnd_toEndOf="@id/view_container"
+        app:layout_constraintTop_toTopOf="@id/view_container"/>
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        app:layout_constraintEnd_toStartOf="@id/bt_usuario"
+        app:layout_constraintTop_toTopOf="@id/bt_usuario"
+        android:text="Rodrigo dos Santos"
+        android:textSize="20dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id: 171637"
+        app:layout_constraintEnd_toEndOf="@id/text_name"
+        app:layout_constraintTop_toBottomOf="@id/text_name"
+        android:textSize="13dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/seus_jogos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seus jogos"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="@id/view_container"
+        app:layout_constraintEnd_toEndOf="@id/view_container"
+        app:layout_constraintTop_toTopOf="@id/view_container"
+        android:layout_marginTop="80dp"
+        />
+
+    <View
+        android:id="@+id/card_1"
+        android:layout_width="115dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintStart_toStartOf="@id/view_container"
+        app:layout_constraintTop_toBottomOf="@id/seus_jogos"
+        />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/minecraft_icon"
+        app:layout_constraintTop_toTopOf="@id/card_1"
+        app:layout_constraintStart_toStartOf="@id/card_1"
+        app:layout_constraintEnd_toEndOf="@id/card_1"/>
+
+    <TextView
+        android:id="@+id/text_card_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lvl: 79"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/card_1"
+        app:layout_constraintEnd_toEndOf="@id/card_1"
+        app:layout_constraintTop_toBottomOf="@id/img1"
+        />
+
+    <View
+        android:id="@+id/card_2"
+        android:layout_width="115dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintEnd_toEndOf="@id/view_container"
+        app:layout_constraintTop_toBottomOf="@id/seus_jogos"
+        />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/clash_royale_icon"
+        app:layout_constraintTop_toTopOf="@id/card_2"
+        app:layout_constraintStart_toStartOf="@id/card_2"
+        app:layout_constraintEnd_toEndOf="@id/card_2"/>
+
+    <TextView
+        android:id="@+id/text_card_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lvl: 79"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/card_2"
+        app:layout_constraintEnd_toEndOf="@id/card_2"
+        app:layout_constraintTop_toBottomOf="@id/img2"
+        />
+
+    <View
+        android:id="@+id/card_3"
+        android:layout_width="115dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintStart_toStartOf="@id/view_container"
+        app:layout_constraintTop_toBottomOf="@id/card_1"
+        />
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/stickman_party_icon"
+        app:layout_constraintTop_toTopOf="@id/card_3"
+        app:layout_constraintStart_toStartOf="@id/card_3"
+        app:layout_constraintEnd_toEndOf="@id/card_3"/>
+
+    <TextView
+        android:id="@+id/text_card_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lvl: 79"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/card_3"
+        app:layout_constraintEnd_toEndOf="@id/card_3"
+        app:layout_constraintTop_toBottomOf="@id/img3"
+        />
+
+    <View
+        android:id="@+id/card_4"
+        android:layout_width="115dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintEnd_toEndOf="@id/view_container"
+        app:layout_constraintTop_toBottomOf="@id/card_2"
+        />
+
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/hungry_shark"
+        app:layout_constraintTop_toTopOf="@id/card_4"
+        app:layout_constraintStart_toStartOf="@id/card_4"
+        app:layout_constraintEnd_toEndOf="@id/card_4"/>
+
+    <TextView
+        android:id="@+id/text_card_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lvl: 79"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/card_4"
+        app:layout_constraintEnd_toEndOf="@id/card_4"
+        app:layout_constraintTop_toBottomOf="@id/img4"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
